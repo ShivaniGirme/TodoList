@@ -1,0 +1,92 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.container{
+	position: fixed;
+	/*top: 0px;
+	left: 0px;*/
+	height: 100vh;
+	width: 100%;
+	background-image: url("https://cdn.pixabay.com/photo/2014/03/25/16/28/todo-list-297195_1280.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+/*	justify-content: center;*/
+}
+.to-do{
+	height: auto;
+	margin-top: 20px;
+	margin-left: 750px;
+	max-width: 400px;
+	width: 100%;
+	background-color: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 20px;
+	box-shadow: 0px 0px 20px black		;
+}
+.task-div{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	background-color: whitesmoke;
+	height: 50px;
+	position: relative;
+	border-radius: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+button{
+	position: absolute;
+	right: 0;
+	border: none;
+	outline: none;
+	height: 50px;
+	border-radius: 20px;
+	width: 90px;
+	background-color: deeppink;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+input{
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	background: transparent;
+}
+ul li{
+		font-size: 20px;
+		list-style-type: none;
+		padding: 8px 25px 10px;
+		position: relative;
+	}
+ul li::before{
+		content: '';
+		background-image: url("https://clipart-library.com/images_k/black-circle-transparent-background/black-circle-transparent-background-11.png");
+		background-size: contain;
+		height: 15px;
+		width: 13px;
+		position: absolute;
+		top: 12px;
+		left: 0;
+	}
+ul li.checked{
+	color: grey;
+/*	text-decoration: line-through;*/
+}
+ul li.checked::before{
+	background-image: url("https://png.pngtree.com/png-clipart/20200831/ourmid/pngtree-hand-drawn-cartoon-design-button-painting-picture-white-check-png-image_2329131.jpg");
+}
+span{
+	position: absolute;
+	right: 0px;
+	font-size: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
