@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>To-do LIst</title>
+	<link rel="stylesheet" type="text/css" href="To-do.css">
+	<!-- <style type="text/css">
+		ul li{
+			list-style-type: none;
+			padding: 10px 50px 10px;
+			position: relative;
+
+		}
+		ul li::before{
+			content: '';
+			background-image: url("https://clipart-library.com/images_k/black-circle-transparent-background/black-circle-transparent-background-11.png");
+			height: 120px;
+			width: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+/*			padding: 10px;*/
+		}
+	</style> -->
+</head>
+<body>
+	<div class="container">
+		<div class="to-do">
+			<h2>
+				To-Do List &nbsp;
+				<img src="https://www.seekpng.com/png/detail/197-1973056_list-icon-png-list-icon-white-png.png" height="30px"/>
+			</h2>
+			<div class="task-div">
+				<input type="text" id="taskEntry" placeholder="Add a Task" />
+				<button onclick="addTask()">Add</button>
+			</div>
+			<ul id="task-list">
+				
+			</ul>
+		</div>
+	</div>
+	<script src="Script.js"></script>
+
+</body>
+</html>
